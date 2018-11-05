@@ -1,0 +1,42 @@
+{
+  "name": "Person",
+  "plural": "Persons",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "default": "a@ejemplo.com",
+      "required": false
+    },
+    "phone": {
+      "type": "string",
+      "default": "0000000000",
+      "required": false
+    },
+    "nickname": {
+      "type": "string",
+      "required": false
+    },
+    "avatar": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+
